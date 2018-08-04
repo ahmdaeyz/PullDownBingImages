@@ -110,7 +110,7 @@ public class Main {
         byte[] response = out.toByteArray();
         Random random = new Random();
         int randName = random.nextInt(20000);
-        FileOutputStream fos = new FileOutputStream("/home/ahmdaeyz/imgs/" + keyWord + "_" + randName + ".jpg");
+        FileOutputStream fos = new FileOutputStream(path+"/" + keyWord + "_" + randName + ".jpg");
         fos.write(response);
         fos.close();
     }
